@@ -15,8 +15,8 @@
    </head>
    <body>
        <!--HEADER-->
-       <div class="main-content">
          <header>
+         <div class="container">
             <!--logo WebStudio and Site navigation-->
             <div class="header-part">
                <div class="logo-part">
@@ -48,11 +48,13 @@
             </ul>
             </div>
          </div>
+      </div>
          </header>
         <!--portfolio MAIN-->
         <main>
            <!--filter section-->
            <section>
+            <div class="container"> 
             <ul>
                <li><input type="button" value="Все"></li>
                <li><input type="button" value="Веб-сайты"></li>
@@ -60,9 +62,13 @@
                <li><input type="button" value="Дизайн"></li>
                <li><input type="button" value="Маркетинг"></li>
             </ul>
+            </div>
            </section>
            <!--examples section-->
            <section>
+            <div class="container">
+            <h2 class="hidden-header">Примеры работ</h2>
+            <!--заголовок скрыть в оформлении-->
            <ul>
               <li> 
                  <img src="/images/example1.jpg" alt="laptop monitor" width="370px"/>
@@ -110,22 +116,26 @@
                <p>Приложение</p>
               </li>
            </ul>
+           </div>
            </section>
         </main>
            <!--SITE FOOTER-->
-         <footer  class="lower-level">
-            <a href=""><span>Web</span>Studio</a>
-           
+         <footer class="footer-part">
+            <div class="container">
+               <div class="logo-part-footer">
+            <a class="logo-link-footer" href=""><span class="blue-logo-part">Web</span>Studio</a>
+           </div>
            <!--address section-->
             <address>
-               <ul>
-                  <li>г. Киев, пр-т Леси Украинки, 26</li>
+               <ul class="address-list">
+                  <li class="address-list-item">г. Киев, пр-т Леси Украинки, 26</li>
                   <li>
-                     <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+                     <a class="address-list-item-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
                   </li>
-                  <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+                  <li><a class="address-list-item-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
                </ul>
             </address>
+            </div>
         </footer>
    </body>
 </html>
