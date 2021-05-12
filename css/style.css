@@ -131,7 +131,7 @@ body {
     /* оформление страницы portfolio */
     /* фильтр страницы portfolio */
     .filter-part-list-item {
-    margin:6px;
+    margin:4px;
     background-color: #f5f4fa;
     font-size: 1.14em;
     letter-spacing: 0.03em;
