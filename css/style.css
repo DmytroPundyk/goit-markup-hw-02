@@ -1,10 +1,11 @@
 body {
-   font-family: "Roboto";
+   font-family: "Roboto",sans-serif;
    color: #212121;
    width: 1600px;
    height: 2349px;
    background: white
 }
+/* header и footer одинаков для обоих страниц */
  /* стилизация логотипа сайта */
 .blue-logo-part {
    color: #2196f3;
@@ -36,12 +37,16 @@ body {
 }
 /* оформление страницы studio */
 /* Hero сайта */
+.hero-part {
+   background: #2f303a;
+   height: 600px;
+   }
 
    .hero-header {
+   color: #fff;
    font-size: 3.14em;
    width: 696px;
    height: 120px;
-   text-align: center;
    text-transform: uppercase;
    letter-spacing: 0.06em;
 }
@@ -123,4 +128,35 @@ body {
     .address-list-item-link:hover {
        color: #2196f3;
     }
+    /* оформление страницы portfolio */
+    /* фильтр страницы portfolio */
+    .filter-part-list-item {
+    margin:6px;
+    background-color: #f5f4fa;
+    font-size: 1.14em;
+    letter-spacing: 0.03em;
+    line-height: 1.625em;
+    border: 0;
+    border-radius: 4px;
+    }
+    .filter-part-list-item:hover {
+      background: #2196f3;
+      color: #fff;
+      box-shadow: 1px 3px 1px 0px rgba(0, 0, 0, 0.1);  
+    }
+    /* примеры страницы portfolio */
+    .pattern-list-item-header {
+      font-weight: bold;
+      font-size: 1.125em;
+      line-height: 2.25em;
+      letter-spacing: 0.06em;
+      color: #212121; 
+    }
+    .pattern-list-item-text {
+      font-size: 1em;
+      line-height: 1.875em;
+      letter-spacing: 0.03em;
+      color: #757575;
+    }
+
 
