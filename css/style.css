@@ -142,7 +142,7 @@ body {
     .filter-part-list-item:hover {
       background: #2196f3;
       color: #fff;
-      box-shadow: 1px 3px 1px 0px rgba(0, 0, 0, 0.1);  
+      box-shadow: 1px 3px 1px 0px rgba(0, 0, 0, 0.2);  
     }
     /* примеры страницы portfolio */
     .pattern-list-item-header {
