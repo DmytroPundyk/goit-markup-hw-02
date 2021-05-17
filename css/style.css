@@ -1,60 +1,94 @@
+:root {
+   --backgound-color: #fff;
+   --main-text-color:#212121;
+   --second-text-color:#757575;
+   --special-color:#2196f3;
+}
+
+
 body {
    font-family: "Roboto",sans-serif;
-   color: #212121;
+   color:var(--main-text-color);
    width: 1600px;
-   height: 2349px;
-   background: white
+   background: var(--backgound-color);
 }
 /* header и footer одинаков для обоих страниц */
  /* стилизация логотипа сайта */
 .blue-logo-part {
-   color: #2196f3;
+   color: var(--special-color);
+   font-family:"Raleway";
+   line-height: 1.86em;
+   font-size: 26px;
+   letter-spacing: 0.03em;
 }
 
 .logo-link {
    text-decoration: none;
    color: #000;
-   font-family: "Raleway";
-   font-weight: 700;
-   font-size: 1.85em;
+   font-family:"Oleo Script";
+   font-weight:700;
+   font-size: 1.65em;
+   line-height: 2.25em;
    letter-spacing: 0.03em;
 }
 
 /* стилизации ссылок навигации и контактов*/
+.navigation-list {
+   list-style: none;
+}
 .navigation-link {
+   font-family: "Roboto";
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 1em;
+   letter-spacing: 0.02em;
    color: #212121;
    text-decoration: none;
-   letter-spacing: 0.02em;
+   
+}
+.contacts-list {
+   list-style: none;
 }
 .contact-link {
    text-decoration: none;
-   color: #757575;
+   font-family: "Roboto";
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 1em;
    letter-spacing: 0.02em;
+   color: #757575;
 }
+
 .navigation-link:hover,
-.contact-link:hover {
+.contact-link:hover,
+.navigation-link:focus,
+.contact-link:focus,
+.active{
    color: #2196f3;
 }
 /* оформление страницы studio */
 /* Hero сайта */
 .hero-part {
    background: #2f303a;
-   height: 600px;
    }
 
    .hero-header {
+   font-family: "Roboto";
    color: #fff;
-   font-size: 3.14em;
-   width: 696px;
-   height: 120px;
+   font-size:44px;
+   font-weight: 900;
+   line-height: 1.36em;
    text-transform: uppercase;
    letter-spacing: 0.06em;
+   text-align: center;
 }
 .hero-button {
+   font-family: "Roboto";
    color: #fff;
-   font-size: 1.14em;
-   width: 200px;
-   height: 50px;
+   font-weight:bold;
+   font-size: 16px;
+   line-height:1.85em;
+   letter-spacing: 0.06em;
    background: #2196f3;
    border-radius: 4px;
    border: 0;
@@ -67,62 +101,89 @@ body {
  .hidden-header {
    display: none;
    }
+   .features-part-list {
+      list-style: none;
+   }
    .features-part-list-header {
       text-transform: uppercase;
       font-weight: 700;
-      line-height: 1.14em;
+      line-height:1em;
+      font-size: 14px;
       letter-spacing: 0.03em;
    }
    .features-part-list-text {
      line-height: 1.71em;
+     font-size: 14px;
      letter-spacing: 0.03em;
      color: #757575;
    }
    /* секция Чем мы занимаемся */
+   .business-part-list {
+      list-style: none;
+   }
    .business-part-header {
       font-weight: bold;
-     font-size: 2.57em;
-     letter-spacing: 0.03em; 
+      font-size: 36px;
+      line-height: 2.6em;
+      letter-spacing: 0.03em;
+      text-align: center;
      }
     
      /* секция Наша команда */
+     .our-team-list {
+        list-style: none;
+     }
      .our-team-header {
       font-weight: bold;
-      font-size: 2.25em;
+      font-size: 36px;
+      line-height: 2.6em;
       letter-spacing: 0.03em;
+      text-align: center;
     }
     .our-team-list-item-header {
-      font-weight: 500;
-     font-size: 1.14em;
+      font-weight:500;
+     font-size: 16px;
+     line-height: 1.17em;
      letter-spacing: 0.03em;
+
      }
      .our-team-list-item-trade {
-      font-size: 1.14em;
-     letter-spacing: 0.03em;
-     color: #757575;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 0.03em;
+      color: #757575;
      }
      /* секция подвал сайта */
     .footer-part {
        width:1600px;
-       height: 252px;
        background-color: #2f303a ;
     }
     .logo-link-footer {
       text-decoration: none;
       color:white;
-      font-family: "Raleway";
-      font-weight: 700;
-      font-size: 1.85em;
-      letter-spacing: 0.03em;  
+      font-family:"Raleway";
+      font-weight:bold;
+      font-size: 26px;
+      line-height: 1.93em;
+      letter-spacing: 0.03em; 
+      }
+      .address-list {
+         list-style: none;
       }
       .address-list-item {
          font-style: normal;
+         font-size: 14px;
+         line-height: 1.5em;
+         letter-spacing: 0.03em;
          color: #FFFFFF;
+
       }
     .address-list-item-link {
        color: rgba(255, 255, 255, 0.6);
        font-style: normal;
        text-decoration: none;
+       font-size: 14px;
+       line-height: 1.5em;
        letter-spacing: 0.03em;
     }
     .address-list-item-link:hover {
@@ -130,30 +191,51 @@ body {
     }
     /* оформление страницы portfolio */
     /* фильтр страницы portfolio */
+    .filter-part-list {
+       list-style: none;
+    }
+    .filter-part-list-item-blue{
+      margin:4px;
+      background-color: #2196F3;
+      color: #FFFFFF;
+      font-size:16px;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+      line-height: 1.625em;
+      border: 0;
+      border-radius: 4px;  
+    }
     .filter-part-list-item {
     margin:4px;
     background-color: #f5f4fa;
-    font-size: 1.14em;
+    font-size:16px;
+    font-weight: 500;
     letter-spacing: 0.03em;
     line-height: 1.625em;
     border: 0;
     border-radius: 4px;
     }
-    .filter-part-list-item:hover {
+    .filter-part-list-item-blue:hover,
+    .filter-part-list-item:hover,
+    .filter-part-list-item:focus {
       background: #2196f3;
       color: #fff;
       box-shadow: 1px 3px 1px 0px rgba(0, 0, 0, 0.2);  
+      cursor: pointer;
     }
     /* примеры страницы portfolio */
+    .pattern-list {
+       list-style: none;
+    }
     .pattern-list-item-header {
       font-weight: bold;
-      font-size: 1.125em;
+      font-size: 18px;
       line-height: 2.25em;
       letter-spacing: 0.06em;
       color: #212121; 
     }
     .pattern-list-item-text {
-      font-size: 1em;
+      font-size: 16px;
       line-height: 1.875em;
       letter-spacing: 0.03em;
       color: #757575;
